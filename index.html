@@ -21,7 +21,7 @@
         <div class="pic-wrapper">
             <div class="close" onclick="handle_pic_container()"><i
                 class="fa fa-close"></i></div>
-            <img src="my_pic.jpg" alt="Aritra's Photo"/>
+            <img src="images/my_pic.jpg" alt="Aritra's Photo"/>
         </div>
     </div>
 
@@ -43,8 +43,8 @@
                             <li><a href="#skills1">Technical Skills</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="my_notes.html"><i class="fa fa-book-open"></i>My Notes</a></li>
-                    <li><a href="#about1"><i class="fa fa-address-card"></i>About</a></li> -->
+                    <!-- <li><a href="my_notes.html"><i class="fa fa-book-open"></i>My Notes</a></li> -->
+                    <li><a href="#about1"><i class="fa fa-address-card"></i>About</a></li>
                     <li><a href="#contact1"><i class="fa fa-envelope"></i>contact</a></li>
                 </ul>
             </nav>
@@ -59,13 +59,11 @@
                     </div>
                     <ul>
                         <li><a href="#" class="active"><i class="fa fa-house-chimney"></i>Home</a></li>
-                        <li onclick="dropdown1()"><a><i class="fa fa-user-tie"></i>Experties<i
-                                    class="fa fa-angle-down"></i></a>
-                            <!-- <ul id="dropdown_1">
-                                <li><a href=""></a></li>
+                        <li onclick="dropdown2()"><a><i class="fa fa-user-tie"></i>Experties<i class="fa fa-angle-down"></i></a>
+                            <ul id="dropdown_2">
                                 <li><a href="#projects1">Projects</a></li>
                                 <li><a href="#skills1">Technical Skills</a></li>
-                            </ul> -->
+                            </ul>
                         </li>
                         <li><a href="#about1"><i class="fa fa-address-card"></i>About</a></li>
                         <li><a href="#contact1"><i class="fa fa-envelope"></i>contact</a></li>
@@ -106,7 +104,7 @@
             <div class="about">
                 <div class="heading">About Myself</div>
                 <div class="info">
-                    <p>I am Aritra Paul and I belong to India. Currently I pursuing Master's in Computer Application
+                    <p>I am Aritra Paul and I am belongs to India. Currently I pursuing Master's in Computer Application
                         from Department of Computer Science & Engineering at University of Kalyani, West Bengal.</p>
 
                     <p>In 2022 I completed B.Sc in Computer Science with grade O (9.03 CGPA) from Siliguri College,
@@ -174,31 +172,31 @@
                 <div class="contents">
                     <a href="#">
                         <div class="content">
-                            <div class="image"><img src="python_logo_black.png" /></div>
+                            <div class="image"><img src="images/python_logo_black.png" /></div>
                             <div class="title">Python</div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="content">
-                            <div class="image"><img src="js_logo_black.png" /></div>
+                            <div class="image"><img src="images/js_logo_black.png" /></div>
                             <div class="title">Javascript</div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="content">
-                            <div class="image"><img src="mysql_logo_black.png" /></div>
+                            <div class="image"><img src="images/mysql_logo_black.png" /></div>
                             <div class="title">MySQL</div>
                         </div>
                     </a>
                     <a href="https://github.com/Aritra212/CppLab.git" target="_blank">
                         <div class="content">
-                            <div class="image"><img src="cpp_logo_black.png" /></div>
+                            <div class="image"><img src="images/cpp_logo_black.png" /></div>
                             <div class="title">C++</div>
                         </div>
                     </a>
                     <a href="https://github.com/Aritra212/DataStructure.git" target="_blank">
                         <div class="content">
-                            <div class="image"><img src="c_logo_black.png" /></div>
+                            <div class="image"><img src="images/c_logo_black.png" /></div>
                             <div class="title">C</div>
                         </div>
                     </a>
@@ -258,6 +256,17 @@
                 click.style.display = "flex";
             }
 
+        }
+
+        function dropdown2() {
+
+            var click = document.getElementById("dropdown_2");
+            if (click.style.display === "none") {
+                click.style.display = "block";
+            }
+            else {
+                click.style.display = "none";
+            }
         }
 
         function normal() {
