@@ -40,7 +40,7 @@ a {
 .top-nav .wrapper .logo {
     height: 52px;
     width: 50px;
-    background-image: url("images/my_pic.jpg");
+    background-image: url("my_pic.jpg");
     background-size: contain;
     border-radius: 25px;
     margin-right: 10px;
@@ -135,7 +135,7 @@ a {
 .header-wrapper .wrapper .left .my-pic {
     height: 250px;
     width: 250px;
-    background-image: url("images/my_pic.jpg");
+    background-image: url("my_pic.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 25px;
