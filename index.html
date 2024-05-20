@@ -15,37 +15,30 @@
 </head>
 
 <body>
-    
+
     <!-- My pic -->
     <div class="my-pic-container" id="pic-container1">
         <div class="pic-wrapper">
-            <div class="close" onclick="handle_pic_container()"><i
-                class="fa fa-close"></i></div>
-            <img src="my_pic.jpg" alt="Aritra's Photo"/>
+            <div class="close" onclick="handle_pic_container()"><i class="fa fa-close"></i></div>
+            <img src="./images/4.png" alt="Aritra's Photo" />
         </div>
     </div>
+
+    <div class="popup center" id="popup"></div>
 
     <!-- Top nav -->
     <div class="top-nav">
         <div class="wrapper">
             <div class="left">
-                <div class="logo" onclick="handle_pic_container()"></div>
+                <div class="logo"></div>
                 <div class="site-name">Aritra Paul</div>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" class="active"><i class="fa fa-house-chimney"></i>Home</a></li>
-                    <li onclick="dropdown1()"><a><i class="fa fa-user-tie"></i>Experties<i
-                                class="fa fa-angle-down"></i></a>
-                        <ul id="dropdown_1">
-                            <li><a href=""></a></li>
-                            <li><a href="#projects1">Projects</a></li>
-                            <li><a href="#skills1">Technical Skills</a></li>
-                        </ul>
-                    </li>
-                    <!-- <li><a href="my_notes.html"><i class="fa fa-book-open"></i>My Notes</a></li> -->
-                    <li><a href="#about1"><i class="fa fa-address-card"></i>About</a></li>
-                    <li><a href="#contact1"><i class="fa fa-envelope"></i>contact</a></li>
+                    <li><a href="#about1">About</a></li>
+                    <li><a href="#projects1">Projects</a></li>
+                    <li><a href="#skills1">Technical Skills</a></li>
+                    <li><a href="#contact1">contact</a></li>
                 </ul>
             </nav>
 
@@ -58,15 +51,10 @@
                         <i class="fa fa-xmark"></i>
                     </div>
                     <ul>
-                        <li><a href="#" class="active"><i class="fa fa-house-chimney"></i>Home</a></li>
-                        <li onclick="dropdown2()"><a><i class="fa fa-user-tie"></i>Experties<i class="fa fa-angle-down"></i></a>
-                            <ul id="dropdown_2">
-                                <li><a href="#projects1">Projects</a></li>
-                                <li><a href="#skills1">Technical Skills</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#about1"><i class="fa fa-address-card"></i>About</a></li>
-                        <li><a href="#contact1"><i class="fa fa-envelope"></i>contact</a></li>
+                        <li><a href="#about1">About</a></li>
+                        <li><a href="#projects1">Projects</a></li>
+                        <li><a href="#skills1">Technical Skills</a></li>
+                        <li><a href="#contact1">contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,7 +67,7 @@
     <div class="header-wrapper">
         <div class="wrapper">
             <div class="left">
-                <div class="my-pic" onclick="handle_pic_container()"></div>
+                <div class="my-pic"></div>
             </div>
             <div class="right">
                 <i class="fa fa-quote-left"></i>
@@ -89,10 +77,25 @@
                         our world. Through my work, I strive to improve user experience. Whether it's developing a
                         website or a software, I'm dedicated to delivering user friendly results.</p>
                 </div>
-                
-                <a href="my_cv.pdf" target="_blank"><div class="button">
-                    View Resume
-                </div></a>
+
+
+
+                <div class="button-container">
+                    <a href="My_resume.pdf" target="_blank">
+                        <div class="button">
+                            Download Resume
+                        </div>
+                    </a>
+                    <a href="#contact1">
+                        <div class="button2">
+                            Hire Me
+                        </div>
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="http://linkedin.com/in/aritra212" target="_blank"><img src="./images/linkedin.png" alt="Linkedin link" /></a>
+                    <a href="https://github.com/Aritra212" target="_blank"><img src="./images/github.png" alt="Github link" /></a>
+                </div>
             </div>
         </div>
     </div>
@@ -104,17 +107,18 @@
             <div class="about">
                 <div class="heading">About Myself</div>
                 <div class="info">
-                    <p>I am Aritra Paul and I am belongs to India. Currently I pursuing Master's in Computer Application
-                        from Department of Computer Science & Engineering at University of Kalyani, West Bengal.</p>
+                    <p>I am Aritra Paul and I am from India. Currently, I am pursuing a Master's in Computer Application
+                        ( MCA ) from the Department of Computer Science & Engineering at the University of Kalyani, West
+                        Bengal. </p>
 
-                    <p>In 2022 I completed B.Sc in Computer Science with grade O (9.03 CGPA) from Siliguri College,
-                        affilited to University of North Bengal </p>
+                    <p>In 2022, I completed my B.Sc in Computer Science with a grade of O (9.03 CGPA) from Siliguri
+                        College, affiliated with the University of North Bengal. </p>
 
-                    <p>In 2019 I completed my Higher Secondary Education with grade A (75.4%) from Siliguri Baradakanta
-                        Vidyapith(H.S)</p>
+                    <p>In 2019, I completed my Higher Secondary Education with a grade of A (75.4%) from Siliguri
+                        Baradakanta Vidyapith (H.S).</p>
 
-                    <p>In 2017 I completed my Secondary Education with grade A (74.14%) from Siliguri Tarai Tarapada
-                        Adarsha Vidyalaya</p>
+                    <p>In 2017, I completed my Secondary Education with a grade of A (74.14%) from Siliguri Tarai
+                        Tarapada Adarsha Vidyalaya.</p>
                 </div>
             </div>
         </div>
@@ -122,47 +126,49 @@
             <div class="projects">
                 <div class="heading">Projects I have been done</div>
                 <div class="contents">
-                    <a href="#">
-                        <div class="content">
-                            <div class="heading">Hospital Management System</div>
-                            <div class="info">
-                                <p><b>Languages Used:</b> Python, Mysql</p>
-                                <p><b>About:</b> In this project I used tkinter library to develop the UI and for
-                                    database connection I used pymysql library</p>
-                            </div>
+                    <div class="content">
+                        <div class="heading">Hospital Management System</div>
+                        <div class="info">
+                            <p><b>Languages Used:</b> Python, Mysql</p>
+                            <p><b>About:</b> In this project I used tkinter library to develop the UI and for
+                                database connection I used pymysql library</p>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="content">
-                            <div class="heading">Student Management System</div>
-                            <div class="info">
-                                <p><b>Languages Used:</b> Python, Mysql</p>
-                                <p><b>About:</b> In this project I used tkinter library to develop the UI and for
-                                    database connection I used pymysql library</p>
-                            </div>
+                        <div class="button-container">
+                            <a href="https://github.com/Aritra212/Hospital-Management-System.git" target="_blank">
+                                <div class="button">Github</div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="https://finderror-official.blogspot.com/" target="_blank">
-                        <div class="content">
-                            <div class="heading">Educational Website Using XHTML</div>
-                            <div class="info">
-                                <p><b>Languages Used:</b> Javascript</p>
-                                <p><b>About:</b> In this project I used XHTML and CSS for developing UI and js for
-                                    giving some functionality. The site is hosetd on blogger now.</p>
-                            </div>
+                    </div>
+                    
+                    <div class="content">
+                        <div class="heading">Weather Forecasting Website</div>
+                        <div class="info">
+                            <p><b>Languages Used:</b> Javascript</p>
+                            <p><b>About:</b> HTML and CSS is used for developing UI and js used for giving some functionality.In this project an api from openweather is used for gathering weather info.</p>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="content">
-                            <div class="heading">Weather Forecasting Website</div>
-                            <div class="info">
-                                <p><b>Languages Used:</b> Javascript</p>
-                                <p><b>About:</b> HTML and CSS is used for developing UI and js used for giving some
-                                    functionality.In this project an api from openweather is used for gathering weather
-                                    info.</p>
-                            </div>
+                        <div class="button-container">
+                            <a href="https://github.com/Aritra212/WeaTherino.git" target="_blank"><div class="button">Github</div></a>
+                            <a href="https://project-weatherino.netlify.app/" target="_blank"><div class="button">View</div></a>
                         </div>
-                    </a>
+                    </div>
+
+                    <div class="content">
+                        <div class="heading">Student Management System</div>
+                        <div class="info">
+                            <p><b>Languages Used:</b> Python, Mysql</p>
+                            <p><b>About:</b> In this project I used tkinter library to develop the UI and for database connection I used pymysql library</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="heading">Educational Website Using XHTML</div>
+                        <div class="info">
+                            <p><b>Languages Used:</b> Javascript</p>
+                            <p><b>About:</b> In this project I used XHTML and CSS for developing UI and js for giving some functionality. The site is hosetd on blogger now.</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://finderror-official.blogspot.com/" target="_blank"><div class="button">View</div></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,54 +176,75 @@
             <div class="skills" id="skills1">
                 <div class="heading">Programming languages I know</div>
                 <div class="contents">
-                    <a href="#">
-                        <div class="content">
-                            <div class="image"><img src="python_logo_black.png" /></div>
-                            <div class="title">Python</div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="content">
-                            <div class="image"><img src="js_logo_black.png" /></div>
-                            <div class="title">Javascript</div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="content">
-                            <div class="image"><img src="mysql_logo_black.png" /></div>
-                            <div class="title">MySQL</div>
-                        </div>
-                    </a>
                     <a href="https://github.com/Aritra212/CppLab.git" target="_blank">
                         <div class="content">
-                            <div class="image"><img src="cpp_logo_black.png" /></div>
+                            <div class="image"><img src="./images/cpp_logo_black.png" /></div>
                             <div class="title">C++</div>
                         </div>
                     </a>
                     <a href="https://github.com/Aritra212/DataStructure.git" target="_blank">
                         <div class="content">
-                            <div class="image"><img src="c_logo_black.png" /></div>
+                            <div class="image"><img src="./images/c_logo_black.png" /></div>
                             <div class="title">C</div>
                         </div>
                     </a>
+                    <a href="#">
+                        <div class="content">
+                            <div class="image"><img src="./images/python_logo_black.png" /></div>
+                            <div class="title">Python</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="content">
+                            <div class="image"><img src="./images/js_logo_black.png" /></div>
+                            <div class="title">Javascript</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="content">
+                            <div class="image"><img src="./images/mysql_logo_black.png" /></div>
+                            <div class="title">MySQL</div>
+                        </div>
+                    </a>
+                    
                 </div>
             </div>
         </div>
+        
+        <!-- Contact Section -->
+        <div class="content2">
+            <div class="contact" id="contact1">
+                <div class="heading">Contact With Me</div>
+                <div class="form-container">
+                    <form id="form">
+                        <label>Name</label><br/>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required/><br/>
+    
+                        <label>Email</label><br/>
+                        <input type="email" name="email" id="email" placeholder="Enter your email id" required/><br/>
+    
+                        <label>Message</label><br/>
+                        <textarea name="message" id="message" placeholder="Write Something...." style="height: 100px;" required></textarea><br/>
+                    </form>
+                    <button class="submit" onclick="sendmail()">Send</button>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <!-- Footer Section -->
     <footer>
         <div class="footer-wrapper">
-            <div class="left" id="contact1">
+            <div class="left" id="contact2">
                 <div class="contact">
-                    <p><b>Phone: &nbsp;</b>+91 974xxxx212</p>
                     <p><b>Address: &nbsp;</b>West Bengal, India</p>
                     <p><b>Gmail: &nbsp;</b>aritrapaul20622@gmail.com</p>
                 </div>
                 <div class="s-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/Aritra212/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://telegram.me/Aritra212" target="_blank"><i class="fa fa-telegram"></i></a>
                     <a href="https://github.com/Aritra212" target="_blank"><i class="fa fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/aritra212/" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </div>
@@ -245,6 +272,42 @@
                 dropdown.style.display = "none"
             }
         }
+
+
+        /* contect */
+        function sendmail(){
+            const name= document.getElementById("name").value;
+            const email= document.getElementById("email").value;
+            const message1 = document.getElementById("message").value;
+            
+            // 
+            if(name!= '' && email!='' && message1!=''){
+                Email.send({
+                    SecureToken:"fb31f689-bb6e-45c8-a941-a196acd1a48",
+                    To : "binarydigitofficial@gmail.com",
+                    From : "binarydigitofficial@gmail.com",
+                    Subject : "Contact enquiry form Portfolio by Elasticmail",
+                    Body : "Name: "+ name+ "<br/>Email: "+ email+ "<br/>message: "+ message1
+                }).then(
+                message =>{
+                if(message.toUpperCase() == "OK"){
+                    alert("Message send successfully");
+                    document.getElementById("form").reset();
+                    window.history.back();
+                    window.location.replace('/')
+
+                }else{
+                    console.log(message);
+                    alert("Error!! Message not Send");
+                    window.history.back();
+                    window.location.replace('/')
+                }
+                }); 
+            }
+            else{
+                alert("Error! Empty fields");
+            }
+        };
 
         /* Responsive purpose */
         function mobileMenu() {
@@ -290,6 +353,8 @@
         }
     </script>
     <script src="https://kit.fontawesome.com/124cc9a039.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 
 </html>
