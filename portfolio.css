@@ -24,7 +24,7 @@ a {
 .top-nav {
     width: 100%;
     height: 70px;
-    background-color: #242533;
+    background-color: var(--background2);
     color: white;
     text-transform: none;
     padding: 10px 0px;
@@ -125,7 +125,7 @@ a {
 .header-wrapper {
     width: 100%;
     min-height: 570px;
-    background-color: #242533;
+    background-color: var(--background2);
     padding: 20px 0px;
     box-sizing: border-box;
 }
@@ -155,7 +155,7 @@ a {
 }
 
 .header-wrapper .wrapper .right i {
-    color: #323445;
+    color: var(--background1);
     font-size: 50px;
     margin-top: 65px;
 }
@@ -200,33 +200,33 @@ a {
     margin-bottom: 20px;
     margin-left: 66px;
 }
-.header-wrapper .wrapper .right .button{
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif, serif;
-    color: white;
-    font-weight: 700;
-    background-color: var(--green);
-    padding: 10px 15px;
-    border-radius: 30px;
-    width: fit-content;
-}
+
+.header-wrapper .wrapper .right .button,
 .header-wrapper .wrapper .right .button2{
-    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif, serif;
     color: white;
     font-weight: 700;
     padding: 6px;
     border-radius: 30px;
-    border: 4px solid var(--green);
     box-sizing: border-box;
     text-align: center;
     width: 190px;
 }
+.header-wrapper .wrapper .right .button{
+    font-size: 18px;
+    padding: 10px;
+    background-color: var(--green);
+}
+.header-wrapper .wrapper .right .button2{
+    font-size: 20px;
+    border: 4px solid var(--green);
+}
+
 
 .header-wrapper .wrapper .right .button:hover,
 .header-wrapper .wrapper .right .button2:hover{
     background-color: white;
-    color: #242533;
+    color: var(--background2);
     border-color: white;
 }
 
@@ -238,12 +238,12 @@ a {
 
 .content-wrapper .content1 {
     min-height: 400px;
-    background-color: #323445;
+    background-color: var(--background1);
 }
 
 .content-wrapper .content2 {
     min-height: 400px;
-    background-color: #242533;
+    background-color: var(--background2);
 }
 
 .content-wrapper .about,
@@ -331,7 +331,7 @@ a {
     border: 4px solid var(--green);
     padding: 6px 15px;
     border-radius: 30px;
-    width: 70px;
+    min-width: 70px;
     text-align: center;
 }
 .projects .contents .content .button-container .button:hover{
@@ -339,14 +339,19 @@ a {
 }
 .projects .contents .content .info p,
 .footer-wrapper .left .contact p {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 12px;
 }
 
 .projects .contents .content .info p b,
 .footer-wrapper .left .contact p b {
     font-weight: 700;
+    font-size: 15px;
 }
-
+.projects .contents .content .info ul{
+    font-size: 12px;
+    margin-left: 18px;
+}
 .skills .contents .content {
     width: 220px;
     min-height: 250px;
@@ -354,7 +359,7 @@ a {
     padding: 30px 0px;
     margin: 0px 10px;
     box-sizing: border-box;
-    background-color: #242533;
+    background-color: var(--background2);
 }
 
 .skills .contents .content .image {
@@ -389,23 +394,23 @@ a {
 .projects .contents::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
-    background-color: #323445;
+    background-color: var(--background1);
 }
 
 .projects .contents::-webkit-scrollbar {
     height: 12px;
-    background-color: #242533;
+    background-color: var(--background2);
 }
 
 .skills .contents::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
-    background-color: #242533;
+    background-color: var(--background2);
 }
 
 .skills .contents::-webkit-scrollbar {
     height: 12px;
-    background-color: #323445;
+    background-color: var(--background1);
 }
 
 .projects .contents::-webkit-scrollbar-thumb,
