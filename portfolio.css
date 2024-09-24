@@ -1,6 +1,9 @@
 * {
     padding: 0px;
     margin: 0px;
+    /* font-family: "Roboto slab", serif;
+    font-weight: 400; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
